@@ -1,0 +1,26 @@
+GET http://localhost:8080/
+
+
+### register
+POST http://localhost:8080/v1/register
+Content-Type: application/json
+
+{
+  "name": "novin",
+  "email": "novin@captiveau.fun",
+  "password": "testpassword",
+  "confirm_password": "testpassword"
+}
+
+### login
+POST http://localhost:8080/v1/login
+Content-Type: application/json
+
+{
+  "email": "novin@captiveau.fun",
+  "password": "testpassword"
+}
+
+### get profile
+GET http://localhost:8080/api/v1/user_info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTY3MzYxMDIsInVzZXJfaWQiOjZ9.KORWBl9iE0OyD872gfn6ArVLl7LcJ4fcHYLKc0_l7vc
